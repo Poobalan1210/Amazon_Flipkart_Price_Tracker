@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 id="title">Amazon and Flipkart Price Tracker</h1>
+<p id="info">Track the price of products available in flipkart and amazon and get notified once the price falls below your budget rate in any of the store.</p>
+
+<div class="container">
+  <form action="#" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="amazon_url">Amazon URL</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="amazon_url" required name="amazon_url" placeholder="Enter your products Amazon URL..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="flipkart_url">Flipkart URL</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="flipkart_url" required name="flipkart_url" placeholder="Enter your products Flipkart URL..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="budget_price">Budget Price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="budget_price" required name="budget_price" placeholder="Enter your estimated budget rate in Rupees..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email_is">Email ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email_id" required name="email_id" placeholder="Enter your mail id..">
+      </div>
+    </div>
+    <div class="row">
+      <input id="track" type="submit" value="Track">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

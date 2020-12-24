@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  background-image: url("/static/flipkart-amazon-1-1200x600.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+#title,
+#info {
+  text-align: center;
+  position: relative;
+  top: 160px;
+}
+#title {
+  font-size: 40px;
+}
+#info {
+  font-size: 20px;
+  font-weight: bold;
+}
+#track {
+  margin-top: 10px;
+}
+input[type="submit"] {
+  background-color: blue;
+  color: blue;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  top: 160px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: auto;
+  }
+}
